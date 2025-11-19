@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Testimonials — VectorX Agency</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    /* Page-Specific Styling */
+    .section-head {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .testimonial-page {
+      padding: 120px 20px;
+      min-height: 100vh;
+    }
+
+    .test-container {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .grid3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    blockquote.quote {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 25px;
+      border-radius: 12px;
+      backdrop-filter: blur(6px);
+      font-size: 1rem;
+      line-height: 1.6;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    blockquote cite {
+      display: block;
+      margin-top: 10px;
+      opacity: 0.7;
+      font-size: 0.9rem;
+    }
+
+    .video-grid {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 25px;
+    }
+
+    .video-box {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 18px;
+      border-radius: 14px;
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .video-box video {
+      width: 100%;
+      border-radius: 10px;
+      outline: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Same Particle Background -->
+  <canvas id="bg"></canvas>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo"><span>Vector</span>X</a>
+      <button class="menu-toggle" aria-label="Open Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="btn btn-sm">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Testimonials -->
+  <section class="testimonial-page container">
+    <div class="test-container">
+
+      <header class="section-head">
+        <h2>What Clients Say</h2>
+        <p>Real words. Real wins.</p>
+      </header>
+
+      <div class="grid3">
+        <blockquote class="quote">
+          “Real Estate Video Shoot + Edit”
+          <cite>— Shyam Jadeja, Founder</cite>
+        </blockquote>
+
+        <blockquote class="quote">
+          “Video Edit Of Family Function”
+          <cite>— A. Trivedi, Cinematic Shoot</cite>
+        </blockquote>
+
+        <blockquote class="quote">
+          “Graphic Design 8/10 Rating With Our Service.”
+          <cite>— S. Bhambhani, Agency Owner</cite>
+        </blockquote>
+      </div>
+
+      <!-- Proof Videos -->
+      <section class="section" id="proof-videos">
+        <header class="section-head">
+          <h2>Proof Videos</h2>
+          <p>Some real showcases of our work quality.</p>
+        </header>
+
+        <div class="video-grid">
+
+          <div class="video-box">
+            <video controls>
+              <source src="videos/video2.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="video-box">
+            <video controls>
+              <source src="videos/video1.mp4" type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> VectorX — Freelancing Agency</p>
+      <div class="socials">
+        <a href="https://www.instagram.com/vector_alws">📷</a>
+        <a href="https://solutioncreatives.com">🐦</a>
+        <a href="#">🐙</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

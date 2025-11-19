@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services — VectorX Agency</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #0a0014;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* NAVBAR */
+        nav {
+            width: 100%;
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            z-index: 10;
+            background: rgba(10, 0, 20, 0.7);
+            backdrop-filter: blur(10px);
+        }
+
+        nav .logo {
+            font-size: 22px;
+            font-weight: 700;
+            color: #b366ff;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .contact-btn {
+            background: #b366ff;
+            padding: 8px 18px;
+            border-radius: 30px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* HERO */
+        .hero {
+            padding-top: 150px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            opacity: 0.7;
+            margin-bottom: 40px;
+        }
+
+        /* SERVICES GRID */
+        .services-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            margin-top: 40px;
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 25px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: 0.25s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: #b366ff;
+        }
+
+        .service-card h3 {
+            color: #b366ff;
+            margin-bottom: 8px;
+        }
+
+        .service-card p {
+            opacity: 0.8;
+            font-size: 14px;
+        }
+
+        /* QUOTE SECTION */
+        .quote-box {
+            text-align: center;
+            margin-top: 60px;
+            padding-bottom: 100px;
+        }
+
+        .quote-box button {
+            background: #b366ff;
+            padding: 12px 30px;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .quote-box button:hover {
+            opacity: 0.8;
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 25px;
+            text-align: center;
+            opacity: 0.6;
+            font-size: 13px;
+        }
+
+        /* PARTICLES BACKGROUND */
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -3;
+            top: 0;
+            left: 0;
+        }
+        .quote-btn {
+    background: #b366ff;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.quote-btn:hover {
+    opacity: 0.8;
+}
+    </style>
+</head>
+
+<body>
+
+    <div id="particles-js"></div>
+
+    <nav>
+        <div class="logo">VectorX</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a style="color:#b366ff;">Services</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <a class="contact-btn" href="contact.html">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <h1>Our Services</h1>
+        <p>Everything you need to launch & scale — in one place.</p>
+    </div>
+
+    <div class="services-container">
+        <div class="service-card">
+            <h3>Graphic Designing</h3>
+            <p>Premium logo design, branding kits, posters, banners & more.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Instagram Automation</h3>
+            <p>Boost engagement with AI-powered automation tools.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Social Media Automation</h3>
+            <p>Business automation to save time & increase engagement.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Website Creation</h3>
+            <p>Professional, modern websites for businesses and brands.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Video Editing</h3>
+            <p>Reels, shorts, cinematic edits & complete brand video packages.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>AI Chatbot Development</h3>
+            <p>Advanced chatbot solutions for customer support & automation.</p>
+        </div>
+    </div>
+
+    <div class="quote-box">
+        <h2>Need a Custom Service?</h2>
+        <p>Tell us what you need — we build tailored solutions.</p>
+<a href="contact.html" class="quote-btn">Get a Custom Quote</a>
+    </div>
+
+    <footer>
+        © 2025 VectorX — Freelancing Agency
+    </footer>
+
+    <!-- PARTICLES JS -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": { "value": 70 },
+                "color": { "value": "#c66bff" },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.6 },
+                "size": { "value": 4 },
+                "line_linked": {
+                    "enable": true,
+                    "color": "#8f30ff",
+                    "opacity": 0.5
+                },
+                "move": { "speed": 2 }
+            }
+        });
+    </script>
+
+</body>
+
+</html>

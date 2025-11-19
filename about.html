@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About — VectorX Agency</title>
+
+  <!-- Fonts & CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+  <!-- Background Canvas -->
+  <canvas id="bg"></canvas>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo"><span>Vector</span>X</a>
+
+      <button class="menu-toggle" aria-label="Open Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="work.html">Work</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html" class="btn btn-sm">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ABOUT PAGE MAIN SECTION -->
+  <section class="section container about" style="padding-top: 120px;">
+    <div class="about-text" data-reveal="up">
+
+      <h2>About Us</h2>
+
+      <p>
+        We are VectorX — a modern freelancing agency from Gandhidham, helping brands grow with
+        premium design, smart marketing, and clean development.
+        <br><br>
+        Our mission is simple:  
+        **Deliver high-conversion designs, next-level content, and fast communication.**
+      </p>
+
+      <ul class="checks">
+        <li>✨ Conversion-focused, research-driven design</li>
+        <li>⚡ Ultra-fast communication & deadlines</li>
+        <li>🧩 Flexible and modular project structure</li>
+        <li>🎥 Experts in Video Editing, Graphic Design & Branding</li>
+        <li>💻 Pro in Website & App Designing</li>
+      </ul>
+
+      <a href="contact.html" class="btn">Work With Us</a>
+
+    </div>
+
+    <div class="about-art" data-reveal="right">
+      <div class="glass-stats">
+        <div><strong>99.9%</strong><span>Uptime websites</span></div>
+        <div><strong>+180%</strong><span>Avg. ROI for clients</span></div>
+        <div><strong>~2 wks</strong><span>Average project time</span></div>
+      </div>
+
+      <div class="orbit">
+        <div class="dot"></div>
+        <div class="ring"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="section container">
+    <header class="section-head">
+      <h2>Meet The Team</h2>
+      <p>A small but powerful team behind the magic.</p>
+    </header>
+
+    <div class="grid3">
+      <div class="card glass-card" data-reveal="fade">
+        <h3>Dhanush Trivedi</h3>
+        <p>Founder • UI/UX • Branding Expert</p>
+      </div>
+
+      <div class="card glass-card" data-reveal="fade">
+        <h3>VectorX Team</h3>
+        <p>Editors • Designers • Developers</p>
+      </div>
+
+      <div class="card glass-card" data-reveal="fade">
+        <h3>Local Partners</h3>
+        <p>Marketing & On-Ground Creative Support</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> VectorX — Freelancing Agency</p>
+      <div class="socials">
+        <a href="https://www.instagram.com/vector_alws">📷</a>
+        <a href="https://solutioncreatives.com">🐦</a>
+        <a href="#">🐙</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+
+</body>
+</html>
